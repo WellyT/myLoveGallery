@@ -88,3 +88,33 @@ main {
 .container:hover {
   outline-color: white;
 }
+/* Media */
+
+@media (max-width: 1000px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    padding: 3rem;
+  }
+  header {
+    position: relative;
+  }
+  header h1 {
+    font-size: 2.4rem;
+    /* text-align: center; */
+  }
+  header i {
+    display: none;
+  }
+  main {
+    margin: 0;
+  }
+  .container span {
+    font-size: 1.2rem;
+    padding: 1.6rem;
+  }
+  .grid {
+    gap: 2rem;
+  }
+}
