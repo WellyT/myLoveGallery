@@ -1,8 +1,8 @@
 let cta = document.getElementById("cta")
 let close = document.getElementById("close")
 cta.addEventListener("click", () => {
-  document.getElementById("imgs").classList.remove("show")
   document.querySelector("body").style.overflow = "hidden"
+  document.getElementById("imgs").classList.remove("show")
   cta.style.outline = "none"
 })
 close.addEventListener("click", () => {
