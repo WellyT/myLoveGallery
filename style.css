@@ -15,6 +15,7 @@ body {
   background-color: #121214;
   color: white;
   padding: 14rem 13.4rem 14rem 11rem;
+  position: relative;
 }
 img {
   width: 100%;
@@ -64,7 +65,7 @@ main {
 /* hover */
 .container {
   position: relative;
-  outline: 4px solid transparent;
+  outline: 0.4rem solid transparent;
   transition: all 0.4s;
 }
 
@@ -102,7 +103,7 @@ main {
   }
   header h1 {
     font-size: 2.4rem;
-    /* text-align: center; */
+    text-align: center;
   }
   header i {
     display: none;
@@ -117,4 +118,41 @@ main {
   .grid {
     gap: 2rem;
   }
+}
+/* imagens */
+.imagens {
+  position: absolute;
+  z-index: 1;
+  max-width: 36.56rem;
+  top: 75%;
+  box-shadow: 0px 0px 60px rgba(0, 217, 255, 0.5);
+}
+
+.show {
+  display: none;
+}
+.imagens::before {
+  content: "";
+  display: block;
+  position: fixed;
+  background-color: rgba(18, 18, 20, 0.7);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: -1;
+}
+
+.imagens img {
+  aspect-ratio: 5/1;
+  margin-bottom: -0.4rem;
+}
+.imagens img:last-child {
+  aspect-ratio: 16/6;
+}
+#imgs i {
+  font-size: 3rem;
+  position: absolute;
+  position: absolute;
+  top: -1.7rem;
+  right: -1.7rem;
 }
