@@ -118,16 +118,18 @@ main {
   .grid {
     gap: 2rem;
   }
+  .imagens {
+    max-width: 36.56rem;
+  }
 }
 /* imagens */
 .imagens {
   position: absolute;
+  max-width: 76.92rem;
   z-index: 1;
-  max-width: 36.56rem;
   top: 75%;
   box-shadow: 0px 0px 60px rgba(0, 217, 255, 0.5);
 }
-
 .show {
   display: none;
 }
