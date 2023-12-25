@@ -158,3 +158,19 @@ main {
   top: -1.7rem;
   right: -1.7rem;
 }
+
+.links {
+  animation: borderStyle 2s infinite ease-in-out;
+  border: 2px solid blue;
+}
+@keyframes borderStyle {
+  0% {
+    border: 2px solid rgb(166, 255, 0);
+  }
+  50% {
+    border: 2px solid rgb(0, 166, 255);
+  }
+  100% {
+    border: 2px solid rgb(255, 0, 165);
+  }
+}
